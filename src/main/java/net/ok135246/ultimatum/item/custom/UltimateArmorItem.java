@@ -15,22 +15,25 @@ import net.minecraft.world.World;
 import java.util.Map;
 
 public class UltimateArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP = {
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.REGENERATION, 400, 100),
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0),
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.SPEED, 400, 10),
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 10)).build()
-    };
+                            new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 400, 100)).build();
 
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_2 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.ULTIMATE,
+                            new StatusEffectInstance(StatusEffects.SPEED, 400, 15)).build();
 
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_3 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.ULTIMATE,
+                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 5)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_4 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.ULTIMATE,
+                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0)).build();
 
     public UltimateArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -44,6 +47,9 @@ public class UltimateArmorItem extends ArmorItem {
 
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);
+                    evaluateArmorEffects_2(player);
+                    evaluateArmorEffects_3(player);
+                    evaluateArmorEffects_4(player);
                 }
             }
         }
@@ -61,7 +67,36 @@ public class UltimateArmorItem extends ArmorItem {
             }
         }
     }
+    private void evaluateArmorEffects_2(PlayerEntity player) {
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP_2.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
 
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+    }
+    private void evaluateArmorEffects_3(PlayerEntity player) {
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP_3.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+    }
+    private void evaluateArmorEffects_4(PlayerEntity player) {
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP_4.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+    }
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
@@ -91,4 +126,3 @@ public class UltimateArmorItem extends ArmorItem {
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
 }
-
