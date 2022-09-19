@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_block"
+    },
+    "X": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "V": {
+      "item": "ultimatum:diamond_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:netherite_catalyst"
+  }
+}

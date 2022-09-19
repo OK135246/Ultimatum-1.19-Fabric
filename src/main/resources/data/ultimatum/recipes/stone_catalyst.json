@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "X": {
+      "item": "minecraft:cobblestone"
+    },
+    "V": {
+      "item": "ultimatum:wooden_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:stone_catalyst"
+  }
+}

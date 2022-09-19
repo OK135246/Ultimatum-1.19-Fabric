@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond_block"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "V": {
+      "item": "ultimatum:lapis_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:diamond_catalyst"
+  }
+}

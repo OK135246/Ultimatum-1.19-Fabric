@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ultimatum:item/ultimate_pickaxe"
+  }
+}

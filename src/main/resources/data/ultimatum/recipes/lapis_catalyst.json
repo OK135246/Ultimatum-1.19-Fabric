@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:lapis_block"
+    },
+    "X": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "V": {
+      "item": "ultimatum:redstone_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:lapis_catalyst"
+  }
+}

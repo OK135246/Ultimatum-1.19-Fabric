@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ultimatum:necronium_essence",
+    "ultimatum:necronium_block",
+    "ultimatum:enchanted_netherite_block",
+    "ultimatum:ultimate_block"
+  ]
+}

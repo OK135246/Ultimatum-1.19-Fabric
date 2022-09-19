@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_block"
+    },
+    "X": {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "ultimatum:enchanted_netherite_apple"
+  }
+}

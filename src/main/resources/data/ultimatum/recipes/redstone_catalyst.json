@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_block"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "V": {
+      "item": "ultimatum:iron_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:redstone_catalyst"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 300,
+  "experience": 0.7,
+  "group": "necronium_dust",
+  "ingredient": {
+    "item": "ultimatum:necronium_essence"
+  },
+  "result": "ultimatum:necronium_dust"
+}

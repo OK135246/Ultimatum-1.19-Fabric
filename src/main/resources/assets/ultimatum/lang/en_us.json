@@ -1,0 +1,34 @@
+{
+  "item.ultimatum.necronium_dust": "Necronium Dust",
+  "item.ultimatum.necronium_ingot": "Necronium Ingot",
+  "item.ultimatum.necronium_stick": "Necronium Stick",
+
+  "item.ultimatum.wooden_catalyst": "Wooden Catalyst",
+  "item.ultimatum.stone_catalyst": "Stone Catalyst",
+  "item.ultimatum.coal_catalyst": "Coal Catalyst",
+  "item.ultimatum.copper_catalyst": "Copper Catalyst",
+  "item.ultimatum.iron_catalyst": "Iron Catalyst",
+  "item.ultimatum.redstone_catalyst": "Redstone Catalyst",
+  "item.ultimatum.lapis_catalyst": "Lapis Catalyst",
+  "item.ultimatum.diamond_catalyst": "Diamond Catalyst",
+  "item.ultimatum.netherite_catalyst": "Netherite Catalyst",
+
+  "item.ultimatum.enchanted_netherite_apple": "Enchanted Netherite Apple",
+
+  "item.ultimatum.ultimate_dust": "Ultimate Dust",
+  "item.ultimatum.ultimate_catalyst": "Ultimate Catalyst",
+  "item.ultimatum.ultimate_ingot": "Ultimate Ingot",
+  "block.ultimatum.ultimate_block": "Ultimate Block",
+  "item.ultimatum.ultimate_sword": "Ultimate Sword",
+  "item.ultimatum.ultimate_pickaxe": "Ultimate Pickaxe",
+  "item.ultimatum.ultimate_axe": "Ultimate Axe",
+  "item.ultimatum.ultimate_shovel": "Ultimate Shovel",
+  "item.ultimatum.ultimate_hoe": "Ultimate Hoe",
+
+  "block.ultimatum.necronium_essence": "Necronium Essence",
+  "block.ultimatum.necronium_block": "Necronium Block",
+
+  "block.ultimatum.enchanted_netherite_block": "Enchanted Netherite Block",
+
+  "itemGroup.ultimatum.ultimatum": "Ultimatum"
+}
