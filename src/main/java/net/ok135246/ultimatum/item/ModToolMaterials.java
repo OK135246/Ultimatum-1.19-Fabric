@@ -10,7 +10,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    ULTIMATE(5, 2147483647,100.0F,100,100, () -> {
+    ULTIMATE(5, 2147483647,100.0F,99,100, () -> {
         return Ingredient.ofItems(ModItems.ULTIMATE_INGOT);
     });
 

@@ -1,14 +1,14 @@
 package net.ok135246.ultimatum.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 
-import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.ok135246.ultimatum.Ultimatum;
-import net.ok135246.ultimatum.item.custom.EnchantedNetheriteAppleItem;
+import net.ok135246.ultimatum.item.custom.*;
 
 public class ModItems {
 
@@ -27,20 +27,35 @@ public class ModItems {
             new Item(new FabricItemSettings().rarity(Rarity.EPIC).group(ModItemGroup.ULTIMATUM)));
 
     public static final Item ULTIMATE_SWORD = registerItem("ultimate_sword",
-            new SwordItem(ModToolMaterials.ULTIMATE, 2147483547, -2.3f,
+            new SwordItem(ModToolMaterials.ULTIMATE, 899, -2.3f,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item ULTIMATE_AXE = registerItem("ultimate_axe",
-            new SwordItem(ModToolMaterials.ULTIMATE, 899, -2.7f,
+            new ModAxeItem(ModToolMaterials.ULTIMATE, 400, -2.7f,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item ULTIMATE_PICKAXE = registerItem("ultimate_pickaxe",
-            new SwordItem(ModToolMaterials.ULTIMATE, 200, -2.4f,
+            new ModPickaxeItem(ModToolMaterials.ULTIMATE, 200, -2.4f,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item ULTIMATE_SHOVEL = registerItem("ultimate_shovel",
-            new SwordItem(ModToolMaterials.ULTIMATE, 150, -2.5f,
+            new ShovelItem(ModToolMaterials.ULTIMATE, 150, -2.5f,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item ULTIMATE_HOE = registerItem("ultimate_hoe",
-            new SwordItem(ModToolMaterials.ULTIMATE, 100, -1.5f,
+            new ModHoeItem(ModToolMaterials.ULTIMATE, 100, -1.5f,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item ULTIMATE_BOW = registerItem("ultimate_bow",
+            new UltimateBowItem(new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM).maxDamage(2147483647)));
+    public static final Item ULTIMATE_HELMET = registerItem("ultimate_helmet",
+            new UltimateArmorItem(ModArmorMaterials.ULTIMATE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item ULTIMATE_CHESTPLATE = registerItem("ultimate_chestplate",
+            new ArmorItem(ModArmorMaterials.ULTIMATE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item ULTIMATE_LEGGINGS = registerItem("ultimate_leggings",
+            new ArmorItem(ModArmorMaterials.ULTIMATE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item ULTIMATE_BOOTS = registerItem("ultimate_boots",
+            new ArmorItem(ModArmorMaterials.ULTIMATE, EquipmentSlot.FEET,
+                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+
 
     public static final Item WOODEN_CATALYST = registerItem("wooden_catalyst",
             new Item(new FabricItemSettings().rarity(Rarity.COMMON).group(ModItemGroup.ULTIMATUM)));
