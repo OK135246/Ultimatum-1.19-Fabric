@@ -14,6 +14,9 @@ public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> NECRONIUM_ESSENCE_PLACED = PlacedFeatures.register("necronium_essence_placed",
             ModConfiguredFeatures.NECRONIUM_ESSENCE, modifiersWithCount(2, HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(5), YOffset.aboveBottom(30))));
 
+    public static final RegistryEntry<PlacedFeature> MITHRIL_ORE_PLACED = PlacedFeatures.register("mithril_ore_placed",
+            ModConfiguredFeatures.MITHRIL_ORE, modifiersWithCount(3, HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-60), YOffset.aboveBottom(30))));
+
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
     }

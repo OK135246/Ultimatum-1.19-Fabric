@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "ultimatum:necronium_block"
+    },
+    "X": {
+      "item": "ultimatum:heart"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "ultimatum:ultimate_ingot"
+  }
+}

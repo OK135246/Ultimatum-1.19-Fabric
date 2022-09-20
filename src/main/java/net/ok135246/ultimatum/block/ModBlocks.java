@@ -22,6 +22,13 @@ public class ModBlocks {
     public static final Block ULTIMATE_BLOCK = registerBlock("ultimate_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(60f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.ULTIMATUM);
 
+    public static final Block MITHRIL_BLOCK = registerBlock("mithril_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(10f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.ULTIMATUM);
+    public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(10f).requiresTool().sounds(BlockSoundGroup.STONE)), ModItemGroup.ULTIMATUM);
+    public static final Block DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(15f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroup.ULTIMATUM);
+
     public static final Block ENCHANTED_NETHERITE_BLOCK = registerBlock("enchanted_netherite_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(10f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.ULTIMATUM);
 

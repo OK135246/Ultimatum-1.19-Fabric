@@ -7,6 +7,10 @@ import net.ok135246.ultimatum.world.feature.ModPlacedFeatures;
 
 public class ModOreGeneration {
     public static void generateOres() {
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.MITHRIL_ORE_PLACED.getKey().get());
+
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NECRONIUM_ESSENCE_PLACED.getKey().get());
     }

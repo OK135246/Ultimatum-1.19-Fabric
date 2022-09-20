@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "ultimatum:ultimate_dust"
+      "item": "minecraft:nether_star"
     },
     "V": {
-      "item": "ultimatum:dragon_catalyst"
+      "item": "ultimatum:netherite_catalyst"
     }
   },
   "pattern": [
@@ -14,6 +14,6 @@
     "###"
   ],
   "result": {
-    "item": "ultimatum:ultimate_catalyst"
+    "item": "ultimatum:nether_star_catalyst"
   }
 }

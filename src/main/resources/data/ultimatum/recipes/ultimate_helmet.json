@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "ultimatum:ultimate_block"
+    },
+    "V": {
+      "item": "ultimatum:ultimate_catalyst"
+    },
+    "X": {
+      "item": "ultimatum:necronium_heart"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "VVV"
+  ],
+  "result": {
+    "item": "ultimatum:ultimate_helmet"
+  }
+}

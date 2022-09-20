@@ -12,11 +12,14 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ULTIMATE("ultimate", 1, new int[]{6, 16, 12, 6}, 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 100.0F, 10.0F, () -> {
+    ULTIMATE("ultimate", 9999, new int[]{6, 12, 16, 6}, 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 100.0F, 10.0F, () -> {
         return Ingredient.ofItems(ModItems.ULTIMATE_INGOT);
+    }),
+    MITHRIL("mithril", 45, new int[]{4, 7, 8, 5}, 100, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 5.0F, 0.5F, () -> {
+        return Ingredient.ofItems(ModItems.MITHRIL_INGOT);
     });
 
-    private static final int[] BASE_DURABILITY = new int[]{109989, 159984, 149985, 129987};
+    private static final int[] BASE_DURABILITY = new int[]{11, 16, 15, 13};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:dragon_egg"
+    },
+    "X": {
+      "item": "minecraft:dragon_head"
+    },
+    "V": {
+      "item": "ultimatum:mithril_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:dragon_catalyst"
+  }
+}

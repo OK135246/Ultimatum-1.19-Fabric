@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:mithril_block"
+    },
+    "X": {
+      "item": "minecraft:mithril_ingot"
+    },
+    "V": {
+      "item": "ultimatum:nether_star_catalyst"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#V#",
+    "X#X"
+  ],
+  "result": {
+    "item": "ultimatum:mithril_catalyst"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ultimatum:mithril_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "ultimatum:mithril_ingot"
+  }
+}

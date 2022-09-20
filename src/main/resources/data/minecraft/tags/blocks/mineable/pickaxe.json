@@ -4,6 +4,9 @@
     "ultimatum:necronium_essence",
     "ultimatum:necronium_block",
     "ultimatum:enchanted_netherite_block",
-    "ultimatum:ultimate_block"
+    "ultimatum:ultimate_block",
+    "ultimatum:mithril_block",
+    "ultimatum:mithril_ore",
+    "ultimatum:deepslate_mithril_ore"
   ]
 }

@@ -10,9 +10,12 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    ULTIMATE(5, 2147483647,100.0F,99,100, () -> {
+    ULTIMATE(5, 2147483647,100.0F,99.0F,100, () -> {
         return Ingredient.ofItems(ModItems.ULTIMATE_INGOT);
-    });
+    }),
+    MITHRIL(5, 4096,13F,5.0F,30, () -> {
+        return Ingredient.ofItems(ModItems.ULTIMATE_INGOT);
+    });;
 
     private final int miningLevel;
     private final int itemDurability;

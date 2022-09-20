@@ -18,22 +18,24 @@ public class UltimateArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 400, 100)).build();
+                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1, 5)).build();
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_2 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.SPEED, 400, 15)).build();
+                            new StatusEffectInstance(StatusEffects.SATURATION, 1, 100)).build();
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_3 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ULTIMATE,
-                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 5)).build();
+                            new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 100)).build();
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP_4 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ULTIMATE,
                             new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400, 0)).build();
+
+
 
     public UltimateArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -50,6 +52,22 @@ public class UltimateArmorItem extends ArmorItem {
                     evaluateArmorEffects_2(player);
                     evaluateArmorEffects_3(player);
                     evaluateArmorEffects_4(player);
+                    player.getAbilities().allowFlying = true;
+                    player.getAbilities().setWalkSpeed(0.5F);
+                    player.getAbilities().setFlySpeed(0.25F);
+                    player.fallDistance = 0;
+                    player.sendAbilitiesUpdate();
+                    player.getAbilities().getWalkSpeed();
+                }
+                else {
+                    if(!player.isCreative()) {
+                        player.getAbilities().allowFlying = false;
+                        player.getAbilities().flying = false;
+                    }
+                    player.getAbilities().setWalkSpeed(0.1F);
+                    player.getAbilities().setFlySpeed(0.05F);
+                    player.sendAbilitiesUpdate();
+                    player.getAbilities().getWalkSpeed();
                 }
             }
         }
@@ -97,10 +115,9 @@ public class UltimateArmorItem extends ArmorItem {
             }
         }
     }
-    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
-        boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
+    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
+        if(hasCorrectArmorOn(mapArmorMaterial, player)) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
                     mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
         }
