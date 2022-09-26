@@ -7,6 +7,7 @@
     "ultimatum:ultimate_block",
     "ultimatum:mithril_block",
     "ultimatum:mithril_ore",
-    "ultimatum:deepslate_mithril_ore"
+    "ultimatum:deepslate_mithril_ore",
+    "ultimatum:ultimate_crafting_table"
   ]
 }

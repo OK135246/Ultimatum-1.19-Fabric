@@ -2,6 +2,7 @@ package net.ok135246.ultimatum;
 
 import net.fabricmc.api.ModInitializer;
 import net.ok135246.ultimatum.block.ModBlocks;
+import net.ok135246.ultimatum.block.entity.ModBlockEntities;
 import net.ok135246.ultimatum.item.ModItems;
 import net.ok135246.ultimatum.util.ModLootTableModifiers;
 import net.ok135246.ultimatum.world.feature.ModConfiguredFeatures;
@@ -24,5 +25,6 @@ public class Ultimatum implements ModInitializer {
 
 		ModLootTableModifiers.modifyLootTables();
 
+		ModBlockEntities.registerAllBlockEntities();
 	}
 }

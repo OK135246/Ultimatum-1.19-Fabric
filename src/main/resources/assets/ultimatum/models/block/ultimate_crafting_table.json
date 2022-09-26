@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/ultimate_crafting_table_bottom",
+    "east": "minecraft:block/ultimate_crafting_table_side",
+    "north": "minecraft:block/ultimate_crafting_table_front",
+    "particle": "minecraft:block/ultimate_crafting_table_front",
+    "south": "minecraft:block/ultimate_crafting_table_side",
+    "up": "minecraft:block/ultimate_crafting_table_top",
+    "west": "minecraft:block/ultimate_crafting_table_front"
+  }
+}
