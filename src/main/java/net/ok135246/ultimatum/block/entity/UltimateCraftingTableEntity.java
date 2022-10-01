@@ -4,7 +4,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.inventory.Inventories;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
@@ -12,7 +14,6 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.ok135246.ultimatum.item.ModItems;
-import net.ok135246.ultimatum.item.inventory.ImplementedInventory;
 import net.ok135246.ultimatum.screen.UltimateCraftingTableScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
@@ -35,12 +36,28 @@ public class UltimateCraftingTableEntity extends BlockEntity implements NamedScr
     }
 
     @Override
+    protected void writeNbt(NbtCompound nbt) {
+        super.writeNbt(nbt);
+        Inventories.writeNbt(nbt, inventory);
+    }
+
+    @Override
+    public void readNbt(NbtCompound nbt) {
+        Inventories.readNbt(nbt, inventory);
+        super.readNbt(nbt);
+    }
+
+    @Override
     public DefaultedList<ItemStack> getItems() {
         return inventory;
     }
 
     public static void tick(World world, BlockPos pos, BlockState state, UltimateCraftingTableEntity entity) {
-        if(hasRecipe(entity) && hasNotReachedStackLimit(entity)) {
+        if(world.isClient()) {
+            return;
+        }
+
+        if(hasRecipe(entity)) {
             craftItem(entity);
         }
     }
@@ -60,9 +77,5 @@ public class UltimateCraftingTableEntity extends BlockEntity implements NamedScr
         boolean hasItemInThirdSlot = entity.getStack(2).getItem() == ModItems.ULTIMATE_DUST;
 
         return hasItemInFirstSlot && hasItemInSecondSlot && hasItemInThirdSlot;
-    }
-
-    private static boolean hasNotReachedStackLimit(UltimateCraftingTableEntity entity) {
-        return entity.getStack(82).getCount() < entity.getStack(82).getMaxCount();
     }
 }

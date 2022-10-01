@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.ok135246.ultimatum.Ultimatum;
+import net.ok135246.ultimatum.entity.ModEntities;
 import net.ok135246.ultimatum.item.custom.*;
 
 public class ModItems {
@@ -144,6 +145,10 @@ public class ModItems {
     public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+
+    public static final Item CHOMPER_SPAWN_EGG = registerItem("shadow_golem_spawn_egg",
+            new SpawnEggItem(ModEntities.SHADOW_GOLEM,0, 0,
+                    new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
 
 
     private static Item registerItem(String name, Item item) {

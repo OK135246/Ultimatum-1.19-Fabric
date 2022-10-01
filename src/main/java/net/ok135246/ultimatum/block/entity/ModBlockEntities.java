@@ -10,7 +10,7 @@ import net.ok135246.ultimatum.block.ModBlocks;
 public class ModBlockEntities {
     public static BlockEntityType<UltimateCraftingTableEntity> ULTIMATE_CRAFTING_TABLE;
 
-    public static void registerAllBlockEntities() {
+    public static void registerBlockEntities() {
         ULTIMATE_CRAFTING_TABLE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Ultimatum.MOD_ID, "ultimate_crafting_table"),
                 FabricBlockEntityTypeBuilder.create(UltimateCraftingTableEntity::new,
