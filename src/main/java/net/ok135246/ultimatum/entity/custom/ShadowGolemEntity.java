@@ -37,8 +37,7 @@ public class ShadowGolemEntity extends HostileEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 0.5f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 10)
-                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 5)
-                .add(EntityAttributes.);
+                .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 5);
     }
 
     @Override
