@@ -17,6 +17,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }),
     MITHRIL("mithril", 45, new int[]{4, 7, 8, 5}, 100, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 5.0F, 0.5F, () -> {
         return Ingredient.ofItems(ModItems.MITHRIL_INGOT);
+    }),
+    VYBRANTHYM("vybranthym", 56, new int[]{4, 7, 8, 5}, 100, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F, 0.6F, () -> {
+        return Ingredient.ofItems(ModItems.VYBRANTHYM_INGOT);
     });
 
     private static final int[] BASE_DURABILITY = new int[]{11, 16, 15, 13};

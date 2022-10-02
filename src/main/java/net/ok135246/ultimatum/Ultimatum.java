@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.ok135246.ultimatum.block.ModBlocks;
 import net.ok135246.ultimatum.block.entity.ModBlockEntities;
 import net.ok135246.ultimatum.entity.ModEntities;
+import net.ok135246.ultimatum.entity.custom.ShadowCreeperEntity;
 import net.ok135246.ultimatum.entity.custom.ShadowGolemEntity;
 import net.ok135246.ultimatum.item.ModItems;
 import net.ok135246.ultimatum.util.ModLootTableModifiers;
@@ -36,6 +37,9 @@ public class Ultimatum implements ModInitializer {
 
 		GeckoLib.initialize();
 
-		FabricDefaultAttributeRegistry.register(ModEntities.SHADOW_GOLEM, ShadowGolemEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(
+				ModEntities.SHADOW_GOLEM, ShadowGolemEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(
+				ModEntities.SHADOW_CREEPER, ShadowCreeperEntity.setAttributes());
 	}
 }

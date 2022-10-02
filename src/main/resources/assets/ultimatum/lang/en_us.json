@@ -62,12 +62,27 @@
   "item.ultimatum.mithril_leggings": "Mithril Leggings",
   "item.ultimatum.mithril_boots": "Mithril Boots",
 
+  "item.ultimatum.vybranthym_ingot": "Vybranthym Ingot",
+  "block.ultimatum.vybranthym_block": "Vybranthym Block",
+  "block.ultimatum.vybranthym_ore": "Vybranthym Ore",
+  "item.ultimatum.vybranthym_sword": "Vybranthym Sword",
+  "item.ultimatum.vybranthym_pickaxe": "Vybranthym Pickaxe",
+  "item.ultimatum.vybranthym_axe": "Vybranthym Axe",
+  "item.ultimatum.vybranthym_shovel": "Vybranthym Shovel",
+  "item.ultimatum.vybranthym_hoe": "Vybranthym Hoe",
+  "item.ultimatum.vybranthym_bow": "Vybranthym Bow",
+  "item.ultimatum.vybranthym_helmet": "Vybranthym Helmet",
+  "item.ultimatum.vybranthym_chestplate": "Vybranthym Chestplate",
+  "item.ultimatum.vybranthym_leggings": "Vybranthym Leggings",
+  "item.ultimatum.vybranthym_boots": "Vybranthym Boots",
+
   "block.ultimatum.necronium_essence": "Necronium Essence",
   "block.ultimatum.necronium_block": "Necronium Block",
 
   "block.ultimatum.enchanted_netherite_block": "Enchanted Netherite Block",
 
   "item.ultimatum.shadow_golem_spawn_egg": "Shadow Golem Spawn Egg",
+  "item.ultimatum.shadow_creeper_spawn_egg": "Shadow Creeper Spawn Egg",
 
   "itemGroup.ultimatum.ultimatum": "Ultimatum"
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "ultimatum:item/mithril_bow",
+    "textures": {
+        "layer0": "ultimatum:item/mithril_bow_pulling_0"
+    }
+}

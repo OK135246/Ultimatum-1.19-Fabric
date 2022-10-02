@@ -89,9 +89,9 @@ public class ModItems {
             (new EnchantedNetheriteAppleItem((new Item.Settings()).group(ModItemGroup.ULTIMATUM).rarity(Rarity.EPIC).food(ModFoodComponents.ENCHANTED_NETHERITE_APPLE))));
 
     public static final Item STONE_STICK = registerItem("stone_stick",
-            new Item(new FabricItemSettings().rarity(Rarity.COMMON).group(ModItemGroup.ULTIMATUM)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
     public static final Item COAL_STICK = registerItem("coal_stick",
-            new Item(new FabricItemSettings().rarity(Rarity.COMMON).group(ModItemGroup.ULTIMATUM)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
     public static final Item COPPER_STICK = registerItem("copper_stick",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroup.ULTIMATUM)));
     public static final Item IRON_STICK = registerItem("iron_stick",
@@ -117,13 +117,13 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
 
     public static final Item MITHRIL_SWORD = registerItem("mithril_sword",
-            new SwordItem(ModToolMaterials.MITHRIL,7 ,-3.4f ,
+            new SwordItem(ModToolMaterials.MITHRIL,7 ,-2.4f ,
                     new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_AXE = registerItem("mithril_axe",
-            new ModAxeItem(ModToolMaterials.MITHRIL, 11, -3.9f,
+            new ModAxeItem(ModToolMaterials.MITHRIL, 11, -2.9f,
                     new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_PICKAXE = registerItem("mithril_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.MITHRIL, 1, -2.4f,
+            new ModPickaxeItem(ModToolMaterials.MITHRIL, 1, -2.6f,
                     new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_SHOVEL = registerItem("mithril_shovel",
             new ShovelItem(ModToolMaterials.MITHRIL, 0, -2.5f,
@@ -138,18 +138,56 @@ public class ModItems {
                     new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate",
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.CHEST,
-                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings",
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.LEGS,
-                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
     public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
-                    new FabricItemSettings().rarity(Rarity.EPIC).fireproof().group(ModItemGroup.ULTIMATUM)));
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
 
-    public static final Item CHOMPER_SPAWN_EGG = registerItem("shadow_golem_spawn_egg",
+    public static final Item RAW_VYRANTHYM = registerItem("raw_vybranthym",
+            new Item(new FabricItemSettings().rarity(Rarity.RARE).group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_INGOT = registerItem("vybranthym_ingot",
+            new Item(new FabricItemSettings().rarity(Rarity.RARE).group(ModItemGroup.ULTIMATUM)));
+
+    public static final Item VYBRANTHYM_SWORD = registerItem("vybranthym_sword",
+            new SwordItem(ModToolMaterials.VYBRANTHYM,7 ,-2.4f ,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_AXE = registerItem("vybranthym_axe",
+            new ModAxeItem(ModToolMaterials.VYBRANTHYM, 11, -2.9f,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_PICKAXE = registerItem("vybranthym_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.VYBRANTHYM, 1, -2.6f,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_SHOVEL = registerItem("vybranthym_shovel",
+            new ShovelItem(ModToolMaterials.VYBRANTHYM, 0, -2.5f,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_HOE = registerItem("vybranthym_hoe",
+            new ModHoeItem(ModToolMaterials.VYBRANTHYM, -1, -1.5f,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_BOW = registerItem("vybranthym_bow",
+            new VybranthymBowItem(new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM).maxDamage(5982)));
+    public static final Item VYBRANTHYM_HELMET = registerItem("vybranthym_helmet",
+            new ArmorItem(ModArmorMaterials.VYBRANTHYM, EquipmentSlot.HEAD,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_CHESTPLATE = registerItem("vybranthym_chestplate",
+            new ArmorItem(ModArmorMaterials.VYBRANTHYM, EquipmentSlot.CHEST,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_LEGGINGS = registerItem("vybranthym_leggings",
+            new ArmorItem(ModArmorMaterials.VYBRANTHYM, EquipmentSlot.LEGS,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+    public static final Item VYBRANTHYM_BOOTS = registerItem("vybranthym_boots",
+            new ArmorItem(ModArmorMaterials.VYBRANTHYM, EquipmentSlot.FEET,
+                    new FabricItemSettings().rarity(Rarity.RARE).fireproof().group(ModItemGroup.ULTIMATUM)));
+
+    public static final Item SHADOW_GOLEM_SPAWN_EGG = registerItem("shadow_golem_spawn_egg",
             new SpawnEggItem(ModEntities.SHADOW_GOLEM,0, 0,
                     new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
 
+    public static final Item SHADOW_CREEPER_SPAWN_EGG = registerItem("shadow_creeper_spawn_egg",
+            new SpawnEggItem(ModEntities.SHADOW_CREEPER,0, 0,
+                    new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Ultimatum.MOD_ID, name), item);

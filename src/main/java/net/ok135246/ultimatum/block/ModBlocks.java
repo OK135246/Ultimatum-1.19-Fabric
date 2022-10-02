@@ -33,6 +33,11 @@ public class ModBlocks {
     public static final Block ENCHANTED_NETHERITE_BLOCK = registerBlock("enchanted_netherite_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(10f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.ULTIMATUM);
 
+    public static final Block VYBRANTHYM_BLOCK = registerBlock("vybranthym_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(15f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS)), ModItemGroup.ULTIMATUM);
+    public static final Block VYBRANTHYM_ORE = registerBlock("vybranthym_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(17f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE_TILES)), ModItemGroup.ULTIMATUM);
+
     public static final Block ULTIMATE_CRAFTING_TABLE = registerBlock("ultimate_crafting_table",
             new UltimateCraftingTableBlock(FabricBlockSettings.of(Material.STONE).strength(10f).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.ULTIMATUM);
 

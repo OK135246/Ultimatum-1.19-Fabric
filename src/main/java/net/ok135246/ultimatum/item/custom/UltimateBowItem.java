@@ -59,7 +59,7 @@ public class UltimateBowItem extends BowItem implements Vanishable {
                                 persistentProjectileEntity.setOnFireFor(1000);
                             }
 
-                            stack.damage(600, playerEntity, (p) -> {
+                            stack.damage(1, playerEntity, (p) -> {
                                 p.sendToolBreakStatus(playerEntity.getActiveHand());
                             });
                             if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {

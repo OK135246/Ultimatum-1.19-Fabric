@@ -58,10 +58,20 @@ public class UltimateArmorItem extends ArmorItem {
                     evaluateArmorEffects_3(player);
                     evaluateArmorEffects_4(player);
                     evaluateArmorEffects_5(player);
-                    player.getAbilities().allowFlying = true;
-                    player.getAbilities().setFlySpeed(0.25F);
-                    player.fallDistance = 0;
-                    player.sendAbilitiesUpdate();
+                    if(hasCorrectArmorOn(ModArmorMaterials.ULTIMATE, player)) {
+                        player.getAbilities().allowFlying = true;
+                        player.getAbilities().setFlySpeed(0.25F);
+                        player.fallDistance = 0;
+                        player.sendAbilitiesUpdate();
+                    }
+                    else {
+                        if(!player.isCreative() && !player.isSpectator()) {
+                            player.getAbilities().allowFlying = false;
+                            player.getAbilities().flying = false;
+                        }
+                        player.getAbilities().setFlySpeed(0.05F);
+                        player.sendAbilitiesUpdate();
+                    }
                 }
                 else {
                     if(!player.isCreative() && !player.isSpectator()) {

@@ -1,0 +1,6 @@
+{
+    "parent": "ultimatum:item/vybranthym_bow",
+    "textures": {
+        "layer0": "ultimatum:item/vybranthym_bow_pulling_0"
+    }
+}
