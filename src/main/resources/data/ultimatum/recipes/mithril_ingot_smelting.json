@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "cookingtime": 300,
+  "cookingtime": 500,
   "experience": 0.7,
   "group": "mithril_ingot",
   "ingredient": {

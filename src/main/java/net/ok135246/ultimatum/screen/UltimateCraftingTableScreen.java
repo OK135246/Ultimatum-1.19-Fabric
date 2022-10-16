@@ -28,7 +28,7 @@ public class UltimateCraftingTableScreen extends HandledScreen<UltimateCraftingT
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - 238) / 2;
-        int y = (height - 267) / 2;
+        int y = (height - 268) / 2;
         drawTexture(matrices, x, y, 0, 0, 238, 256);
     }
 

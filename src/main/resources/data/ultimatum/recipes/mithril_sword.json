@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "ultimatum:mithril_ingot"
+    },
+    "V": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "V"
+  ],
+  "result": {
+    "item": "ultimatum:mithril_sword"
+  }
+}

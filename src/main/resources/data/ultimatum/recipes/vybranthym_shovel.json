@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "ultimatum:vybranthym_ingot"
+    },
+    "V": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "X",
+    "V",
+    "V"
+  ],
+  "result": {
+    "item": "ultimatum:vybranthym_shovel"
+  }
+}

@@ -8,6 +8,7 @@ import net.ok135246.ultimatum.entity.ModEntities;
 import net.ok135246.ultimatum.entity.custom.ShadowCreeperEntity;
 import net.ok135246.ultimatum.entity.custom.ShadowGolemEntity;
 import net.ok135246.ultimatum.item.ModItems;
+import net.ok135246.ultimatum.screen.ModScreenHandlers;
 import net.ok135246.ultimatum.util.ModLootTableModifiers;
 import net.ok135246.ultimatum.world.dimension.ModDimensions;
 import net.ok135246.ultimatum.world.feature.ModConfiguredFeatures;
@@ -36,6 +37,8 @@ public class Ultimatum implements ModInitializer {
 		ModDimensions.register();
 
 		GeckoLib.initialize();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 
 		FabricDefaultAttributeRegistry.register(
 				ModEntities.SHADOW_GOLEM, ShadowGolemEntity.setAttributes());

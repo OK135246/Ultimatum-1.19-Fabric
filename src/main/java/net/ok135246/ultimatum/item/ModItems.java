@@ -184,7 +184,6 @@ public class ModItems {
     public static final Item SHADOW_GOLEM_SPAWN_EGG = registerItem("shadow_golem_spawn_egg",
             new SpawnEggItem(ModEntities.SHADOW_GOLEM,0, 0,
                     new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));
-
     public static final Item SHADOW_CREEPER_SPAWN_EGG = registerItem("shadow_creeper_spawn_egg",
             new SpawnEggItem(ModEntities.SHADOW_CREEPER,0, 0,
                     new FabricItemSettings().group(ModItemGroup.ULTIMATUM)));

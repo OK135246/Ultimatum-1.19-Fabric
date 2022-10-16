@@ -7,7 +7,9 @@ import net.minecraft.util.registry.Registry;
 import net.ok135246.ultimatum.Ultimatum;
 
 public class ModScreenHandlers {
-    public static ScreenHandlerType<UltimateCraftingTableScreenHandler> ULTIMATE_CRAFTING_TABLE_SCREEN_HANDLER =
-            Registry.register(Registry.SCREEN_HANDLER, new Identifier(Ultimatum.MOD_ID, "ultimate_crafting_table"),
-                    new ScreenHandlerType<>(UltimateCraftingTableScreenHandler::new));
+    public static ScreenHandlerType<UltimateCraftingTableScreenHandler> ULTIMATE_CRAFTING_TABLE_SCREEN_HANDLER;
+
+    public static void registerAllScreenHandlers() {
+        ULTIMATE_CRAFTING_TABLE_SCREEN_HANDLER = new ScreenHandlerType<>(UltimateCraftingTableScreenHandler::new);
+    }
 }

@@ -14,7 +14,7 @@ public class UltimatumClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModModelPredicateProvider.registerModModels();
-        
+
         HandledScreens.register(ModScreenHandlers.ULTIMATE_CRAFTING_TABLE_SCREEN_HANDLER, UltimateCraftingTableScreen::new);
 
         EntityRendererRegistry.register(ModEntities.SHADOW_GOLEM, ShadowGolemRenderer::new);

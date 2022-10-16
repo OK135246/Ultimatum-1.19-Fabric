@@ -8,6 +8,8 @@ import net.ok135246.ultimatum.item.ModItems;
 public class ModModelPredicateProvider {
     public static void registerModModels() {
         registerBow(ModItems.ULTIMATE_BOW);
+        registerBow(ModItems.MITHRIL_BOW);
+        registerBow(ModItems.VYBRANTHYM_BOW);
     }
 
     private static void registerBow(Item bow) {
